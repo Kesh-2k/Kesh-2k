@@ -51,4 +51,6 @@
 |:---:|:---:|:---:|
 | Código simples e tipado vale mais que código esperto | Toda falha gera alerta — e, se possível, recuperação automática | Backup e segurança são pré-requisitos, não features |
 
+<p align="center"><sub>Feito com ☕, TypeScript e muito <code>docker compose</code></sub></p>
+
 <img alt="Rodapé em onda" width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,50:10b981,100:059669&height=110&section=footer"/>
