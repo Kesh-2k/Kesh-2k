@@ -18,7 +18,7 @@
 
 <h2 align="center">🧰 Tecnologias</h2>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,js,nodejs,express,react,vite,tailwind,python,fastapi&theme=dark&perline=9"/><br/><br/>
+  <img alt="Linguagens e frontend" src="https://skillicons.dev/icons?i=ts,js,nodejs,express,react,vite,tailwind,python,fastapi&theme=dark&perline=9"/><br/><br/>
   <img src="https://skillicons.dev/icons?i=postgres,redis,prisma,docker,nginx,linux,ubuntu,bash,aws&theme=dark&perline=9"/><br/><br/>
   <img src="https://skillicons.dev/icons?i=cloudflare,githubactions,git,github,vscode&theme=dark&perline=5"/>
 </p>
