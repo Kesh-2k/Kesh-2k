@@ -18,7 +18,7 @@
 
 ### 👨‍💻 Sobre mim
 
-Engenheiro de software focado em **produtos web de ponta a ponta** e na **plataforma que os mantém no ar**. Projeto, construo e opero sistemas em produção — do frontend em React à infraestrutura em Linux, Docker e AWS — com ênfase em confiabilidade, segurança e automação.
+Desenvolvedor focado em **produtos web de ponta a ponta** e na **plataforma que os mantém no ar**. Projeto, construo e opero sistemas em produção — do frontend em React à infraestrutura em Linux, Docker e AWS — com ênfase em confiabilidade, segurança e automação.
 
 - 🏗️ **Arquitetura:** APIs Node/TypeScript em modo `strict`, React + Vite, PostgreSQL como fonte da verdade com sincronização via `LISTEN/NOTIFY`.
 - ⚙️ **Plataforma & DevOps:** PaaS self-hosted que publica apps em containers isolados (banco e usuário próprios por app), reverse proxy com Traefik, Cloudflare Tunnel e CI/CD com runners self-hosted do GitHub Actions.
