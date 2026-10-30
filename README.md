@@ -1,53 +1,114 @@
-<h1 align="center">Jeferson de Santana Silva</h1>
-<p align="center"><b>Full-Stack & DevOps / Platform </b></p>
+<!-- Cabeçalho -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:4f46e5,50:7c3aed,100:06b6d4&height=200&section=header&text=Jeferson%20Santana&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Full-Stack%20%E2%80%A2%20DevOps%20%E2%80%A2%20Platform%20Engineering&descAlignY=58&descSize=18"/>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"/>
-  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black"/>
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white"/>
-  <img src="https://img.shields.io/badge/SAP_Fiori-0FAAFF?style=flat-square&logo=sap&logoColor=white"/>
+  <a href="https://github.com/Kesh-2k">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3500&pause=900&color=8B5CF6&center=true&vCenter=true&width=640&lines=Construo+produtos+web+de+ponta+a+ponta;Opero+a+plataforma+que+os+mant%C3%A9m+no+ar;TypeScript+%E2%80%A2+React+%E2%80%A2+Docker+%E2%80%A2+AWS;Automa%C3%A7%C3%A3o%2C+confiabilidade+e+seguran%C3%A7a" alt="Typing SVG"/>
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Kesh-2k&label=visitas&color=7c3aed&style=flat-square"/>
+  <img src="https://img.shields.io/github/followers/Kesh-2k?label=seguidores&style=flat-square&color=4f46e5"/>
 </p>
 
 ---
 
-### 👨‍💻 Sobre mim
+## 👨‍💻 Sobre mim
 
-Desenvolvedor focado em **produtos web de ponta a ponta** e na **plataforma que os mantém no ar**. Projeto, construo e opero sistemas em produção — do frontend em React à infraestrutura em Linux, Docker e AWS — com ênfase em confiabilidade, segurança e automação.
+<img align="right" width="380" src="https://github-readme-stats.vercel.app/api?username=Kesh-2k&show_icons=true&count_private=true&hide_border=true&theme=tokyonight&bg_color=0d1117&title_color=8b5cf6&icon_color=06b6d4"/>
 
-- 🏗️ **Arquitetura:** APIs Node/TypeScript em modo `strict`, React + Vite, PostgreSQL como fonte da verdade com sincronização via `LISTEN/NOTIFY`.
-- ⚙️ **Plataforma & DevOps:** PaaS self-hosted que publica apps em containers isolados (banco e usuário próprios por app), reverse proxy com Traefik, Cloudflare Tunnel e CI/CD com runners self-hosted do GitHub Actions.
-- 🛡️ **Confiabilidade:** backups `restic` criptografados em 3 destinos (local, S3 e Google Drive), **failover automático para AWS** (Lambda watchdog + CloudFormation) com failback autônomo, watchdogs systemd e alertas por push/WhatsApp.
-- 🔐 **Segurança:** sessões HttpOnly com CSRF, 2FA TOTP com segredos cifrados, forwardAuth para ferramentas administrativas, auditoria de toda ação que muda estado.
-- 🤖 **IA aplicada:** integração de agentes LLM (Claude Agent SDK) em operação — chat de operação do servidor, relatórios automáticos e bot de consulta com ferramentas somente leitura.
+Desenvolvedor focado em **produtos web de ponta a ponta** e na **plataforma que os mantém no ar** — do frontend em React à infraestrutura em Linux, Docker e AWS.
 
-### 🧰 Stack
+- 🏗️ APIs **Node/TypeScript** em `strict`, React + Vite e **PostgreSQL** como fonte da verdade
+- ⚙️ **PaaS self-hosted**: apps em containers isolados, Traefik, Cloudflare Tunnel e CI/CD
+- 🛡️ **Failover automático para AWS** com volta autônoma e backups criptografados em 3 destinos
+- 🔐 Sessões seguras, **2FA TOTP**, forwardAuth e auditoria completa
+- 🤖 **Agentes de IA** integrados à operação do servidor
 
-| Área | Tecnologias |
-|---|---|
-| **Backend** | Node.js, Express, TypeScript, Python (FastAPI), Prisma, Zod |
-| **Frontend** | React, Vite, Tailwind CSS, PWA / Web Push, SAP Fiori (UI5) |
-| **Dados** | PostgreSQL, Redis |
-| **Infra** | Linux (Ubuntu), Docker / Compose, Traefik, Nginx, Apache, Cloudflare |
-| **Cloud** | AWS (EC2, S3, Lambda, CloudFormation, IAM) |
-| **DevOps** | GitHub Actions, systemd, restic, IaC, observabilidade |
+<br clear="right"/>
 
-### 📌 Princípios
+---
 
-> Produção é o único ambiente que importa: tudo automatizado, observável e reversível.
-
-- Código simples e tipado vale mais que código esperto.
-- Toda falha precisa de um alerta — e, de preferência, de uma recuperação automática.
-- Segurança e backup não são features, são pré-requisitos.
-
-### 📊 GitHub
+## 🧰 Tecnologias
 
 <p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=Kesh-2k&show_icons=true&count_private=true&hide_border=true&theme=tokyonight"/>
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kesh-2k&layout=compact&hide_border=true&theme=tokyonight"/>
+  <img src="https://skillicons.dev/icons?i=ts,js,nodejs,express,react,vite,tailwind,python,fastapi&perline=9" />
+  <br/><br/>
+  <img src="https://skillicons.dev/icons?i=postgres,redis,prisma,docker,nginx,linux,ubuntu,bash,aws&perline=9" />
+  <br/><br/>
+  <img src="https://skillicons.dev/icons?i=cloudflare,githubactions,git,github,vscode&perline=5" />
 </p>
+
+---
+
+## 🚀 Destaques
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🖥️ Central Apps Hub
+Painel web que gerencia um servidor Linux inteiro: deploy de apps em Docker, rotas, terminal, arquivos, cofre de senhas e monitoramento em tempo real.
+
+`Node` `React` `PostgreSQL` `Docker` `Traefik`
+
+</td>
+<td width="50%" valign="top">
+
+### ☁️ Standby na AWS
+Servidor de emergência frio: uma Lambda vigia o domínio e liga a instância sozinha se a origem cair, restaurando do S3. Volta automática quando tudo normaliza.
+
+`AWS Lambda` `EC2` `S3` `CloudFormation`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 💾 Backup em 3 camadas
+`restic` criptografado em disco local, S3 e Google Drive, com retenção, verificação diária de integridade e alertas.
+
+`restic` `systemd` `rclone`
+
+</td>
+<td width="50%" valign="top">
+
+### 🤖 Operação com IA
+Bot de WhatsApp e relatórios automáticos do servidor com agentes LLM usando somente ferramentas de leitura.
+
+`Claude Agent SDK` `WhatsApp` `Web Push`
+
+</td>
+</tr>
+</table>
+
+<p align="center">
+  <a href="https://github.com/Kesh-2k/devops-10-2026"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Kesh-2k&repo=devops-10-2026&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=8b5cf6&icon_color=06b6d4"/></a>
+  <a href="https://github.com/Kesh-2k/Aplicativo-Fiori"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Kesh-2k&repo=Aplicativo-Fiori&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=8b5cf6&icon_color=06b6d4"/></a>
+</p>
+
+---
+
+## 📊 Atividade
+
+<p align="center">
+  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=Kesh-2k&theme=tokyonight&hide_border=true&background=0d1117&ring=8b5cf6&fire=06b6d4&currStreakLabel=8b5cf6&locale=pt_BR"/>
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kesh-2k&layout=compact&hide_border=true&theme=tokyonight&bg_color=0d1117&title_color=8b5cf6&count_private=true"/>
+</p>
+
+<p align="center">
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Kesh-2k&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=8b5cf6&line=06b6d4&point=ffffff&area=true"/>
+</p>
+
+---
+
+## 📌 Princípios
+
+> **Produção é o único ambiente que importa** — tudo automatizado, observável e reversível.
+
+| ✨ Simplicidade | 🔔 Observabilidade | 🔒 Segurança |
+|:---:|:---:|:---:|
+| Código simples e tipado vale mais que código esperto | Toda falha gera alerta — e, se possível, recuperação automática | Backup e segurança são pré-requisitos, não features |
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,50:7c3aed,100:4f46e5&height=110&section=footer"/>
