@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Kesh-2k&label=visitas&color=7c3aed&style=for-the-badge"/>
+  <img src="https://komarev.com/ghpvc/?username=Kesh-2k&base=886&label=visitas&color=7c3aed&style=for-the-badge"/>
   <img src="https://img.shields.io/github/followers/Kesh-2k?label=seguidores&style=for-the-badge&color=4f46e5"/>
 </p>
 
