@@ -37,7 +37,7 @@
 <p align="center"><img alt="Estatísticas e linguagens" width="100%" src="./assets/stats-console.svg"/></p>
 <p align="center">
   
-  <img width="70%" src="https://github-readme-streak-stats.herokuapp.com/?user=Kesh-2k&theme=dark&hide_border=true&background=0a0d12&ring=34d399&fire=22d3ee&currStreakLabel=34d399&locale=pt_BR"/>
+  <img alt="Sequência de contribuições" width="70%" src="https://github-readme-streak-stats.herokuapp.com/?user=Kesh-2k&theme=dark&hide_border=true&background=0a0d12&ring=34d399&fire=22d3ee&currStreakLabel=34d399&locale=pt_BR"/>
 </p>
 <p align="center"><img width="100%" src="https://raw.githubusercontent.com/Kesh-2k/Kesh-2k/output/snake.svg"/></p>
 
