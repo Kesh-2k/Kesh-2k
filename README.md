@@ -1,5 +1,5 @@
 <h1 align="center">Jeferson de Santana Silva</h1>
-<p align="center"><b>Senior Software Engineer · Full-Stack & DevOps / Platform Engineering</b></p>
+<p align="center"><b>Full-Stack & DevOps / Platform Engineering</b></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
