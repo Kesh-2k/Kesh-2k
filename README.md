@@ -1,4 +1,4 @@
-<p align="center"><img width="100%" src="./assets/banner-console.svg"/></p>
+<p align="center"><img width="100%" alt="Kesh — Full-Stack, DevOps, Platform" src="./assets/banner-console.svg"/></p>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=800&color=34d399&center=true&vCenter=true&width=700&lines=Construo+produtos+web+de+ponta+a+ponta;Opero+a+plataforma+que+os+mant%C3%A9m+no+ar;Failover+autom%C3%A1tico%2C+zero+downtime;TypeScript+%E2%80%A2+React+%E2%80%A2+Docker+%E2%80%A2+AWS"/>
