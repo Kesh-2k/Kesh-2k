@@ -30,19 +30,15 @@
   <img width="49%" src="./assets/card1-console.svg"/> <img width="49%" src="./assets/card2-console.svg"/>
   <img width="49%" src="./assets/card3-console.svg"/> <img width="49%" src="./assets/card4-console.svg"/>
 </p>
-<p align="center">
-  <a href="https://github.com/Kesh-2k/devops-10-2026"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Kesh-2k&repo=devops-10-2026&theme=dark&hide_border=true&bg_color=0a0d12&title_color=34d399&icon_color=22d3ee"/></a>
-  <a href="https://github.com/Kesh-2k/Aplicativo-Fiori"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Kesh-2k&repo=Aplicativo-Fiori&theme=dark&hide_border=true&bg_color=0a0d12&title_color=34d399&icon_color=22d3ee"/></a>
-</p>
 
 <img width="100%" src="./assets/divider-console.svg"/>
 
 <h2 align="center">📊 Atividade</h2>
+<p align="center"><img width="100%" src="./assets/stats-console.svg"/></p>
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Kesh-2k&show_icons=true&count_private=true&theme=dark&hide_border=true&bg_color=0a0d12&title_color=34d399&icon_color=22d3ee"/>
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=Kesh-2k&theme=dark&hide_border=true&background=0a0d12&ring=34d399&fire=22d3ee&currStreakLabel=34d399&locale=pt_BR"/>
+  
+  <img width="70%" src="https://github-readme-streak-stats.herokuapp.com/?user=Kesh-2k&theme=dark&hide_border=true&background=0a0d12&ring=34d399&fire=22d3ee&currStreakLabel=34d399&locale=pt_BR"/>
 </p>
-<p align="center"><img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Kesh-2k&theme=github-compact&hide_border=true&bg_color=0a0d12&color=34d399&line=22d3ee&point=ffffff&area=true"/></p>
 <p align="center"><img width="100%" src="https://raw.githubusercontent.com/Kesh-2k/Kesh-2k/output/snake.svg"/></p>
 
 <img width="100%" src="./assets/divider-console.svg"/>
