@@ -27,7 +27,7 @@
 
 <h2 align="center">🚀 Destaques</h2>
 <p align="center">
-  <img width="49%" src="./assets/card1-console.svg"/> <img width="49%" src="./assets/card2-console.svg"/>
+  <img alt="Central Apps Hub" width="49%" src="./assets/card1-console.svg"/> <img width="49%" src="./assets/card2-console.svg"/>
   <img width="49%" src="./assets/card3-console.svg"/> <img width="49%" src="./assets/card4-console.svg"/>
 </p>
 
