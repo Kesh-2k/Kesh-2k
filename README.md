@@ -20,7 +20,7 @@
 <p align="center">
   <img alt="Linguagens e frontend" src="https://skillicons.dev/icons?i=ts,js,nodejs,express,react,vite,tailwind,python,fastapi&theme=dark&perline=9"/><br/><br/>
   <img alt="Bancos, containers e infraestrutura" src="https://skillicons.dev/icons?i=postgres,redis,prisma,docker,nginx,linux,ubuntu,bash,aws&theme=dark&perline=9"/><br/><br/>
-  <img src="https://skillicons.dev/icons?i=cloudflare,githubactions,git,github,vscode&theme=dark&perline=5"/>
+  <img alt="Ferramentas de DevOps" src="https://skillicons.dev/icons?i=cloudflare,githubactions,git,github,vscode&theme=dark&perline=5"/>
 </p>
 
 <img width="100%" src="./assets/divider-console.svg"/>
