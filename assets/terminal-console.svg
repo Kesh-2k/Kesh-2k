@@ -2,20 +2,20 @@
 <style>
 .f{font:15px 'Courier New',monospace}
 .l{opacity:0;animation:in .4s ease-out forwards}
-.k{fill:#c084fc}.v{fill:#e2e8f0}.g{fill:#22d3ee}.m{fill:#64748b}.y{fill:#4ade80}
+.k{fill:#34d399}.v{fill:#e2e8f0}.g{fill:#22d3ee}.m{fill:#64748b}.y{fill:#4ade80}
 .cur{animation:bl 1s steps(1) infinite}
 .win{animation:pop .8s ease-out both}
 @keyframes in{from{opacity:0;transform:translateX(-12px)}to{opacity:1;transform:none}}
 @keyframes bl{50%{opacity:0}}
 @keyframes pop{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
 </style>
-<defs><linearGradient id="b" x1="0" x2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#06b6d4"/>
+<defs><linearGradient id="b" x1="0" x2="1"><stop offset="0" stop-color="#10b981"/><stop offset="1" stop-color="#06b6d4"/>
 <animateTransform attributeName="gradientTransform" type="rotate" values="0 .5 .5;360 .5 .5" dur="6s" repeatCount="indefinite"/></linearGradient></defs>
 <g class="win" style="transform-origin:center">
-<rect x="2" y="2" width="996" height="326" rx="16" fill="#0d1117" stroke="url(#b)" stroke-width="2"/>
-<rect x="2" y="2" width="996" height="40" rx="16" fill="#161b22"/><rect x="2" y="26" width="996" height="16" fill="#161b22"/>
+<rect x="2" y="2" width="996" height="326" rx="16" fill="#0a0d12" stroke="url(#b)" stroke-width="2"/>
+<rect x="2" y="2" width="996" height="40" rx="16" fill="#10151c"/><rect x="2" y="26" width="996" height="16" fill="#10151c"/>
 <circle cx="28" cy="22" r="6" fill="#ff5f57"/><circle cx="48" cy="22" r="6" fill="#febc2e"/><circle cx="68" cy="22" r="6" fill="#28c840"/>
-<text x="500" y="27" text-anchor="middle" class="f m">jeferson@hub: ~/sobre-mim</text>
+<text x="500" y="27" text-anchor="middle" class="f m">kesh@hub: ~/sobre-mim</text>
 </g>
 <g class="f">
 <text class="l" x="28" y="78" style="animation-delay:.6s"><tspan class="y">➜</tspan> <tspan class="g">~</tspan> <tspan class="v">cat sobre-mim.ts</tspan></text>
