@@ -12,7 +12,7 @@
 <img width="100%" src="./assets/divider-console.svg"/>
 
 <h2 align="center">👨‍💻 Sobre mim</h2>
-<p align="center"><img width="100%" src="./assets/terminal-console.svg"/></p>
+<p align="center"><img width="100%" alt="Sobre mim em formato de terminal" src="./assets/terminal-console.svg"/></p>
 
 <img width="100%" src="./assets/divider-console.svg"/>
 
