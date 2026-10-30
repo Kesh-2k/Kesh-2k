@@ -6,7 +6,7 @@
 
 <p align="center">
   <img alt="Contador de visitas" src="https://komarev.com/ghpvc/?username=Kesh-2k&base=886&label=visitas&color=10b981&style=for-the-badge"/>
-  <img src="https://img.shields.io/github/followers/Kesh-2k?label=seguidores&style=for-the-badge&color=059669"/>
+  <img alt="Seguidores no GitHub" src="https://img.shields.io/github/followers/Kesh-2k?label=seguidores&style=for-the-badge&color=059669"/>
 </p>
 
 <img width="100%" src="./assets/divider-console.svg"/>
