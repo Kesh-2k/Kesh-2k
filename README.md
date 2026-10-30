@@ -51,4 +51,4 @@
 |:---:|:---:|:---:|
 | Código simples e tipado vale mais que código esperto | Toda falha gera alerta — e, se possível, recuperação automática | Backup e segurança são pré-requisitos, não features |
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,50:10b981,100:059669&height=110&section=footer"/>
+<img alt="Rodapé em onda" width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,50:10b981,100:059669&height=110&section=footer"/>
