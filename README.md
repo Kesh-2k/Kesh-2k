@@ -28,7 +28,7 @@
 <h2 align="center">🚀 Destaques</h2>
 <p align="center">
   <img alt="Central Apps Hub" width="49%" src="./assets/card1-console.svg"/> <img alt="Standby na AWS" width="49%" src="./assets/card2-console.svg"/>
-  <img alt="Backup em 3 camadas" width="49%" src="./assets/card3-console.svg"/> <img width="49%" src="./assets/card4-console.svg"/>
+  <img alt="Backup em 3 camadas" width="49%" src="./assets/card3-console.svg"/> <img alt="Operação com IA" width="49%" src="./assets/card4-console.svg"/>
 </p>
 
 <img width="100%" src="./assets/divider-console.svg"/>
