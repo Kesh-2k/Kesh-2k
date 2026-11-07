@@ -1,0 +1,27 @@
+name: streak
+# Cartão de sequência de contribuições gerado aqui a cada 30 min (o serviço externo guardava por horas).
+# Publica dist/streak.svg na branch "streak"; o README aponta para o arquivo de lá.
+on:
+  schedule: [{cron: "*/30 * * * *"}]
+  workflow_dispatch:
+  push: {branches: [main], paths: [scripts/streak.mjs, .github/workflows/streak.yml]}
+permissions: {contents: write}
+concurrency: {group: streak, cancel-in-progress: true}
+jobs:
+  gen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with: {node-version: 22}
+      - run: node scripts/streak.mjs "${{ github.repository_owner }}" dist/streak.svg
+        env: {GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"}
+      - name: Publicar na branch streak
+        run: |
+          cd dist
+          git init -q -b streak
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add streak.svg
+          git commit -qm "Cartão de sequência atualizado"
+          git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" streak
