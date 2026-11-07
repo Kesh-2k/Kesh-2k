@@ -1,5 +1,5 @@
-// Gera assets do cartão de sequência de contribuições (mesmo visual do github-readme-streak-stats),
-// direto da API do GitHub, para atualizar a cada 30 min sem o cache de horas do serviço externo.
+// Gera o cartão de sequência de contribuições (mesmo visual do github-readme-streak-stats) pela API do GitHub.
+// Roda no Central Apps Hub a cada 30 min (timer hub-profile-cards), que publica na branch "streak".
 //   GITHUB_TOKEN=... node scripts/streak.mjs <usuário> <arquivo.svg>
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { dirname } from 'node:path';
