@@ -39,7 +39,7 @@
 <img width="100%" src="./assets/divider-console.svg"/>
 
 <h2 align="center">📊 Atividade</h2>
-<p align="center"><img alt="Estatísticas e linguagens" width="100%" src="./assets/stats-console.svg"/></p>
+<p align="center"><img alt="Estatísticas e linguagens" width="100%" src="https://raw.githubusercontent.com/Kesh-2k/Kesh-2k/streak/stats.svg"/></p>
 <p align="center">
   
   <img alt="Sequência de contribuições" width="70%" src="https://raw.githubusercontent.com/Kesh-2k/Kesh-2k/streak/streak.svg"/>
