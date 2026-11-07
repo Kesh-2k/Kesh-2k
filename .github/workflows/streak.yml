@@ -1,6 +1,7 @@
 name: streak
 # Cartões do perfil gerados aqui a cada 30 min: sequência de contribuições (streak.svg) e Atividade (stats.svg).
 # Publica os dois na branch "streak"; o README aponta para os arquivos de lá.
+# STATS_TOKEN (segredo): token do dono, para contar também repositórios privados e da organização.
 on:
   schedule: [{cron: "*/30 * * * *"}]
   workflow_dispatch:
@@ -15,9 +16,9 @@ jobs:
       - uses: actions/setup-node@v7
         with: {node-version: 22}
       - run: node scripts/streak.mjs "${{ github.repository_owner }}" dist/streak.svg
-        env: {GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"}
+        env: {GITHUB_TOKEN: "${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}"}
       - run: python3 scripts/stats.py dist/stats.svg
-        env: {GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}", GH_USER: "${{ github.repository_owner }}"}
+        env: {GH_TOKEN: "${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}", GH_USER: "${{ github.repository_owner }}"}
       - name: Publicar na branch streak
         run: |
           cd dist
