@@ -1,23 +1,27 @@
-import json, os, urllib.request
+import json, os, sys, urllib.request
 U = os.environ.get("GH_USER", "Kesh-2k")
 Q = """query($u:String!){user(login:$u){createdAt followers{totalCount}
-repositories(ownerAffiliations:OWNER,first:100){totalCount nodes{stargazerCount languages(first:10,orderBy:{field:SIZE,direction:DESC}){edges{size node{name color}}}}}
-contributionsCollection{totalCommitContributions restrictedContributionsCount totalPullRequestContributions totalIssueContributions
+repositories(ownerAffiliations:OWNER,first:100){nodes{stargazerCount}}
+contributionsCollection{totalRepositoriesWithContributedCommits
+commitContributionsByRepository(maxRepositories:100){repository{stargazerCount languages(first:10,orderBy:{field:SIZE,direction:DESC}){edges{size node{name color}}}}}
+totalCommitContributions restrictedContributionsCount totalPullRequestContributions totalIssueContributions
 contributionCalendar{totalContributions}}}}"""
 req = urllib.request.Request("https://api.github.com/graphql", json.dumps({"query": Q, "variables": {"u": U}}).encode(),
     {"Authorization": "bearer " + os.environ["GH_TOKEN"], "Content-Type": "application/json"})
 u = json.load(urllib.request.urlopen(req))["data"]["user"]
 c = u["contributionsCollection"]
 langs = {}
-for r in u["repositories"]["nodes"]:
+# Linguagens dos repositórios em que houve commit no ano (inclui os da organização, não só os da conta).
+worked = [x["repository"] for x in c["commitContributionsByRepository"]]
+for r in worked:
     for e in r["languages"]["edges"]:
         n = e["node"]; langs.setdefault(n["name"], [0, n["color"] or "#10b981"]); langs[n["name"]][0] += e["size"]
 top = sorted(langs.items(), key=lambda x: -x[1][0])[:5]; tot = sum(v[0] for _, v in top) or 1
 stats = [("Contribuições no ano", c["contributionCalendar"]["totalContributions"]),
          ("Commits", c["totalCommitContributions"] + c["restrictedContributionsCount"]),
          ("Pull requests", c["totalPullRequestContributions"]),
-         ("Repositórios", u["repositories"]["totalCount"]),
-         ("Estrelas", sum(r["stargazerCount"] for r in u["repositories"]["nodes"]))]
+         ("Repositórios com commits", c["totalRepositoriesWithContributedCommits"]),
+         ("Estrelas", sum(r["stargazerCount"] for r in worked))]
 rows = "".join(f'<g class="r" style="animation-delay:{.3+i*.15:.2f}s"><text x="28" y="{84+i*30}" class="k">› {k}</text><text x="372" y="{84+i*30}" class="v" text-anchor="end">{v}</text></g>' for i, (k, v) in enumerate(stats))
 bars, x = "", 420
 for i, (n, (s, col)) in enumerate(top):
@@ -36,4 +40,8 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="790" height="250" viewB
 <line x1="400" y1="24" x2="400" y2="226" stroke="#263040"/>
 <rect x="420" y="70" width="340" height="10" rx="5" fill="#151b24"/>{bars}{rows}{legend}
 </svg>'''
-open("assets/stats-console.svg", "w").write(svg)
+# Saída: argumento (a action grava em dist/ e publica na branch streak) ou o arquivo antigo do repositório.
+out = sys.argv[1] if len(sys.argv) > 1 else "assets/stats-console.svg"
+os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
+open(out, "w").write(svg)
+print("estatísticas:", ", ".join(f"{k} {v}" for k, v in stats))

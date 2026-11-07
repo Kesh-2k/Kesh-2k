@@ -1,10 +1,10 @@
 name: streak
-# Cartão de sequência de contribuições gerado aqui a cada 30 min (o serviço externo guardava por horas).
-# Publica dist/streak.svg na branch "streak"; o README aponta para o arquivo de lá.
+# Cartões do perfil gerados aqui a cada 30 min: sequência de contribuições (streak.svg) e Atividade (stats.svg).
+# Publica os dois na branch "streak"; o README aponta para os arquivos de lá.
 on:
   schedule: [{cron: "*/30 * * * *"}]
   workflow_dispatch:
-  push: {branches: [main], paths: [scripts/streak.mjs, .github/workflows/streak.yml]}
+  push: {branches: [main], paths: [scripts/streak.mjs, scripts/stats.py, .github/workflows/streak.yml]}
 permissions: {contents: write}
 concurrency: {group: streak, cancel-in-progress: true}
 jobs:
@@ -16,12 +16,14 @@ jobs:
         with: {node-version: 22}
       - run: node scripts/streak.mjs "${{ github.repository_owner }}" dist/streak.svg
         env: {GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"}
+      - run: python3 scripts/stats.py dist/stats.svg
+        env: {GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}", GH_USER: "${{ github.repository_owner }}"}
       - name: Publicar na branch streak
         run: |
           cd dist
           git init -q -b streak
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add streak.svg
-          git commit -qm "Cartão de sequência atualizado"
+          git add streak.svg stats.svg
+          git commit -qm "Cartões do perfil atualizados"
           git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" streak
